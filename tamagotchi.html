@@ -60,7 +60,7 @@ body {
 <body>
     <div id="bloco">
         <div id="blocoImagem">
-            <img src="img/verde.jpg" class="pet" id="pet" alt="imagem">
+            <img src="imagem/verde.jpg" class="pet" id="pet" alt="imagem">
         </div>
         <div class="lado">
             <h2><strong>Status</strong></h2>
@@ -105,19 +105,19 @@ body {
         logo a baixo controlamos o nível de satisfação do pet
         */
         if (fome <= 0 || higiene <= 0 || sono <= 0 || diversao <= 0 || social <= 0) {
-            document.getElementById("pet").src = "img/preto.jpg";
+            document.getElementById("pet").src = "imagem/preto.jpg";
             document.getElementById('mensagem').innerHTML = 'Você deixou seu pet morrer, atualize a página ';
         }
         else if (total > 400) {
-            document.getElementById("pet").src = "img/verde.jpg";
+            document.getElementById("pet").src = "imagem/verde.jpg";
         }
 
         else if (total > 200) {
-            document.getElementById("pet").src = "img/amarelo.jpg";
+            document.getElementById("pet").src = "imagem/amarelo.jpg";
         }
 
         else if (total > 50) {
-            document.getElementById("pet").src = "img/vermelho.jpg";
+            document.getElementById("pet").src = "imagem/vermelho.jpg";
         }
 
         fome = fome - parseInt(time);
